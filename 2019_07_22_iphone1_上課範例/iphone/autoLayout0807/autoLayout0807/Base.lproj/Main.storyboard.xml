@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="autoLayout0807" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="Bcw-Fv-RpT">
+                                <rect key="frame" x="20" y="40" width="280" height="420"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic1" translatesAutoresizingMaskIntoConstraints="NO" id="9xI-xd-Y5C">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="174"/>
+                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="ucW-sU-WWZ">
+                                        <rect key="frame" x="0.0" y="196" width="280" height="28.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="111" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1d-7R-bsX">
+                                                <rect key="frame" x="0.0" y="0.0" width="86" height="28.5"/>
+                                                <state key="normal" title="特性" backgroundImage="btn_bg"/>
+                                                <connections>
+                                                    <action selector="userClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="06W-fj-L09"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="222" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjf-Gf-NCg">
+                                                <rect key="frame" x="97" y="0.0" width="86" height="28.5"/>
+                                                <state key="normal" title="產品" backgroundImage="btn_bg"/>
+                                                <connections>
+                                                    <action selector="userClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dWe-zu-L8S"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="333" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6S-QL-LoQ">
+                                                <rect key="frame" x="194" y="0.0" width="86" height="28.5"/>
+                                                <state key="normal" title="支援" backgroundImage="btn_bg"/>
+                                                <connections>
+                                                    <action selector="userClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BNc-Fc-aIo"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28.5" id="fAF-on-wk2"/>
+                                        </constraints>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic1" translatesAutoresizingMaskIntoConstraints="NO" id="6nc-nF-acZ">
+                                        <rect key="frame" x="0.0" y="246.5" width="280" height="173.5"/>
+                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6nc-nF-acZ" firstAttribute="height" secondItem="9xI-xd-Y5C" secondAttribute="height" id="ixQ-uh-TTG"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Bcw-Fv-RpT" secondAttribute="trailing" constant="20" id="9AN-YB-wjA"/>
+                            <constraint firstItem="Bcw-Fv-RpT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ddn-gw-VXD"/>
+                            <constraint firstAttribute="bottom" secondItem="Bcw-Fv-RpT" secondAttribute="bottom" constant="20" id="qNS-DY-2n9"/>
+                            <constraint firstItem="Bcw-Fv-RpT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="y9F-B3-bXu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="159.375" y="-112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_bg" width="28.5" height="28.5"/>
+        <image name="pic1" width="336" height="195"/>
+    </resources>
+</document>
